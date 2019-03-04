@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title><%=title%></title>
+  <% include partials/head.html %>
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header class="row">
+    <div class="container-portada">
+      <% include partials/navigation.html %>
+      <div class="capa-gradient">
+        <div class="container-details">
+          <div class="details">
+            <h1>¿Que Hacemos?</h1>
+            <p>Somos un MarketPlace, ofrecemos una plataforma en la cual puedas ofrecer tus productos y servicios y te
+              contactamos con
+              el cliente correcto.
+            </p>
+            <input type="button" class="btn" value="Ver mas">
+            
+          </div>
+      
+  </header>
+  
+  <% include partials/portafolio.html %>
+
+  </div>
+  <!-- FOOTER -->
+  <% include partials/footer.html%>
+  <!-- JAVASCRIPT CDNS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+body{
+    background:white;
+    color:black;
+    
+}
+
+div img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+    left:2px;
+    right:2px ;
+    margin: auto;
+    
+}
+
+.container-portada{
+    width: 100%;
+    height:700px;
+    background-image: url(../image/fotojuan.jpg);
+    background-size: 130%;
+    animation: movimiento 10s infinite linear;
+    
+}
+@keyframes movimiento{
+    from{
+background-position: bottom left;
+    }to{
+background-position: top right;
+    }
+}
+
+.capa-gradient{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    opacity: 1;
+}
+.container-details{
+    width: 100%;
+    max-width:1200px;
+    position: relative;
+    margin: auto;
+}
+.details{
+    width:100%;
+    max-width:500px;
+    position: relative;
+    top:180px;
+    color: white;
+    left:40px;
+}
+.details h1{
+font-size: 30px;
+font-weight: 150;
+}
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#subtitulo{
+    font-size: 90px;
+    color: white;
+    padding-top: 350px;
+    padding-right: 100px;
+    text-align: center;
+    float:right;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background: none;
+    border-bottom-style: none;
+    border: 1px solid white;
+    color:white;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.details button:hover{
+    background: white;
+    color:black;
+}
+ #about{
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.btn{
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    margin: auto;
+    border-style: none;
+    background: lightseagreen;
+    color: white;
+    transition: all 300ms;
+}
+.btn:hover{
+    background: rgb(61, 189, 240);
+    transition: all 300ms;
+    cursor: pointer;
+}
+.btn:active{
+    background: lightskyblue;
+    transition: all 100ms;
+    transform: scale(1.2);
+}
+
+.container-ventas{
+    width: 100%;
+    height:500px;
+    background-image: url(../image/resumen1.jpg);
+    background-size: 100%;
+   position: relative;
+}
+.capa-transparente{
+    width: 100%;
+    height:445px;
+    position: absolute;
+    background-color: rgb(27, 99, 194);
+    opacity:0.7;
+    
+}
+.detalles h1{
+    color: white;
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+.detalles h3{
+    color: white;
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 200px;
+    
+}
+#derecha{
+    float:left;
+    padding-left: 90px;
+    text-align: center;
+    color: rgb(65, 110, 236);
+    padding-top: 50px;
+}
+#centro{
+    float:left;
+    padding-left: 90px;
+    text-align: center;
+    color: rgb(65, 110, 236);
+    padding-top: 50px;
+
+}
+#izquierda{
+    float:left;
+    padding-left:98px;
+    text-align: center;
+    color:rgb(65, 110, 236);
+    padding-top: 50px;
+}
+#invitacion{
+    padding-top: 40px;
+    width: 100%;
+    height: 200px;
+}
+#banner{
+    text-align: center;
+    width:100%;
+    height: 300px;
+    background-image: url(../image/negocio4.jpg);
+    background-size:100%;
+    position:relative;
+}
+#copy h2{
+text-align: center;
+color:rgb(26, 24, 24);
+padding-top: 70px;
+font-size: 50px;
+}
+#copy p{
+color: rgb(53, 49, 49);
+font-size: 40px;
+text-align: center;
+}
+
+
+
+
+
