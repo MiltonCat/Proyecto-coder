@@ -16,4 +16,14 @@ router.get('/ventas', (req, res) => {
         
 });
 
+router.get('/market', (req, res) => {
+    res.render('market.html', {title: 'Patagonia Market'});
+       
+});
+
+router.get('/invierte', (req, res) => {
+    res.render('invierte.html', {title: 'Patagonia Market'});
+       
+});
+
 module.exports = router;
