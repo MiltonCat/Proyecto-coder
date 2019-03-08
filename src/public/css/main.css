@@ -13,7 +13,6 @@ div img{
     right:2px ;
     margin: auto;  
 }
-
 header1 nav{
    position: relative;
    bottom:0;
@@ -24,8 +23,7 @@ header1 nav{
    
 }
 header1 nav a {
-    color:white;
-     
+    color:white;  
      padding-right: 50px;
     float:right;
    
@@ -125,7 +123,14 @@ background-position: top right;
 }
 
 #about{
-padding-top: 60px;
+padding-top: 100px;
+
+}
+#about h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 40px;
+    color: rgba(58, 57, 57, 0.897);
 }
 .container-ventas{
     width: 100%;
@@ -158,33 +163,109 @@ padding-top: 60px;
     padding-top: 200px;
     
 }
-#derecha{
-    float:left;
-    padding-left: 90px;
-    text-align: center;
-    color: rgb(65, 110, 236);
-    padding-top: 50px;
-}
-#centro{
-    float:left;
-    padding-left: 90px;
-    text-align: center;
-    color: rgb(65, 110, 236);
-    padding-top: 50px;
 
-}
-#izquierda{
-    float:left;
-    padding-left:98px;
-    text-align: center;
-    color:rgb(65, 110, 236);
-    padding-top: 50px;
-}
 #invitacion{
     padding-top: 40px;
     width: 100%;
     height: 200px;
 }
+.text h1{
+    width: 100%;
+    height: 20px;
+    font-size: 50px;
+    text-align: center;
+    padding-top:20px;
+}
+.container{
+    position:relative;
+    width: 1300px;
+    height: 300px;
+    margin: 240px auto;
+    
+}
+.container .box{
+position: relative;
+width: calc(370px - 30px);
+height: calc(300px - 30px);
+background: #000;
+float: left;
+margin: 15px;
+box-sizing: border-box;
+overflow: hidden;
+border-radius: 10px;
+}
+.container .box .icon{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .box:hover .icon{
+    top:20px;
+    left: calc(50% - 40px);
+    width:  80px;
+    height:  80px;
+    border-radius: 50%;
+}
+.container .box .icon .fas{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+font-size: 80px;
+transition: 0.5s;
+color:#fff;
+}
+.container .box:hover .icon .fas{
+    font-size: 40px;
+}
+.container .box .content{
+    position: absolute;
+    top: 100%;
+    height: calc(100% -100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition:  0.5s;
+    opacity: 0;
+}
+.container .box:hover .content{
+   top: 100px;
+   opacity: 1;
+}
+.container .box .content h3{
+margin: 0;
+padding: 0;
+color: #fff;
+font-size: 24px;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    }
+    .container .box:nth-child(1) .icon{
+       background: #00abf0; 
+    }
+    .container .box:nth-child(1) .icon{
+        background: #6e92e0; 
+     }
+     .container .box:nth-child(2) .icon{
+        background: #751f71; 
+     }
+     .container .box:nth-child(2) .icon{
+         background: #752699; 
+      }
+      .container .box:nth-child(3) .icon{
+        background: #2fe247; 
+     }
+     .container .box:nth-child(3) .icon{
+         background: #24a5cc; 
+      }
 #banner{
     text-align: center;
     width:100%;
