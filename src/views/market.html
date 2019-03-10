@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%=title%></title>
+   
+    
+    <title>
+        <%=title%>
+    </title>
     <% include partials/head.html %>
     <style>
-    body {
-      font-family: 'Ubuntu', sans-serif;
-    }
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
     </style>
 </head>
-<body>
-    <header>
-        <div class="row">
-            <div class="container-market">
-                    <% include partials/navigation.html %>
-                    <div class="col-sm-8" id="parrafo">
-                    </div>
-                    <div class="col-sm-4" id="parrafo2">
-                      <h1><%=title%></h1>
-                      <h2>En esta plataforma vas a encontrar diferentes productos, y negocios 
-                          en la Patagonia
-                      </h2>
-                    </div>
-                </div>
-            </div>
-        
-    
-    <div class="contenedor">
+<header>
+
+    <div class="container-market">
+        <% include partials/navigation.html%>
+        <div class="slider">
         <ul>
-            <li><div class="title">header</div> </li>
-            <li><div class="title">header</div></li>
-            <li><div class="title">header</div></li>
-            <li><div class="title">header</div></li>
-            <li><div class="title">header</div></li>
-            <li><div class="title">header</div></li>
-            <li><div class="title">header</div></li>
-            <li><div class="title">header</div></li>
+            <div class="slider">       
+            <li><img src="image/negocios.jpg" alt=""></li>
+            <section id="flex-caption">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </section>
             
+           
+            
+            </div>
+            <div class="slider">
+            <li><img src="image/negocios2.jpg" alt=""></li>
+            <section id="flex-caption">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </section>
+            
+            </div>
+            <div class="slider">
+            <li><img src="image/negocio3.jpg" alt=""></li> 
+            <section id="flex-caption">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </section>
+            </div>
         </ul>
     </div>
-</header>
-</body>
-<% include partials/footer.html%>
+    </div>
+    </header>
+    <body>
+        <div class="container" id="article">
+            <div class="col-md-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Sit, hic!</p>
+            </div>
+        </div>
+
+    </body>
+
+
+
+
 </html>

@@ -1,9 +1,11 @@
-body{
-    background:white;
-    color:black;
-    
-}
 
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
 div img{
     position: relative;
     width: 100%;
@@ -13,19 +15,21 @@ div img{
     right:2px ;
     margin: auto;  
 }
+
 header1 nav{
    position: relative;
    bottom:0;
    height:60px;
-   line-height: 60px;
+   line-height: 80px;
    width: 100%;
    background:none;
    
 }
 header1 nav a {
-    color:white;  
-     padding-right: 50px;
+    color:#fff;  
+     padding-right: 40px;
     float:right;
+    font-size: 15px;
    
 }
 .container-portada{
@@ -48,7 +52,7 @@ background-position: top right;
     width: 100%;
     height: 550px;
     top:50px;
-    background-color:rgb(43, 149, 214);
+    background-color:rgb(14, 35, 48);
     opacity: 0.8;
     float: left;
      
@@ -95,6 +99,7 @@ background-position: top right;
  #about{
     padding-bottom: 5px;
     width: 100%;
+    
 }
 #about h3 {
     width: 100%;
@@ -134,7 +139,7 @@ padding-top: 100px;
 }
 .container-ventas{
     width: 100%;
-    height:550px;
+    height:500px;
     background-image: url(../image/resumen1.jpg);
     background-size: 100%;
    position: relative;
@@ -142,10 +147,10 @@ padding-top: 100px;
 }
 .capa-transparente{
     width: 100%;
-    height:550px;
+    height:500px;
     position: absolute;
-    background-color: rgb(27, 99, 194);
-    opacity:0.7;
+    background-color: rgb(22, 39, 61);
+    opacity:0.5;
     
 }
 .detalles h1{
@@ -252,23 +257,23 @@ font-size: 24px;
     padding: 0;
     color: #fff;
     }
-    .container .box:nth-child(1) .icon{
+    .container .box:nth-child(1) {
        background: #00abf0; 
     }
     .container .box:nth-child(1) .icon{
         background: #6e92e0; 
      }
-     .container .box:nth-child(2) .icon{
-        background: #751f71; 
+     .container .box:nth-child(2){
+        background: #a31b9c; 
      }
      .container .box:nth-child(2) .icon{
-         background: #752699; 
+         background: #4e2163; 
       }
-      .container .box:nth-child(3) .icon{
+      .container .box:nth-child(3){
         background: #2fe247; 
      }
      .container .box:nth-child(3) .icon{
-         background: #24a5cc; 
+         background: #087211; 
       }
 #banner{
     text-align: center;
@@ -281,63 +286,78 @@ font-size: 24px;
 }
 #copy h2{
 text-align: center;
-color:rgb(26, 24, 24);
+color:rgb(73, 67, 67);
 padding-top: 70px;
 font-size: 50px;
 }
 #copy p{
-color: rgb(53, 49, 49);
+color: rgb(43, 35, 35);
 font-size: 30px;
 text-align: center;
 }
 .container-market{
-    width:100%;
-    height: 500px;
-    background-image: url(../image/fotojuan2.jpg);
-    background-size: 100%;
-    opacity: 0.8;
+    background: #000;
 }
-#parrafo2{
-    background-color: rgb(91, 91, 243);
-    opacity: 0.6;
-    float: left;
-    width:90%;
-    height: 500px;
-}
-#parrafo2 h1{
-    color:white;
+.slider{
     width: 100%;
-    text-align: center;
-    padding-top: 40px;
+    margin:auto;
 }
-#parrafo2 h2{
-    width: 100%;
-    color:white;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 20px;
-}
-.contenedor{
-    width: 95%;
-    overflow: hidden;
-    margin: 20px auto ;
-    padding: 20px 0px;
-}
-.contenedor ul{
-    padding-top: 30px;
-    margin:0px;
+.slider ul {
+    position:absolute;
+    display: flex;
+    padding: 0;
+    width: 300%;
+    opacity: 0.9;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
     
 }
-.contenedor ul li{
+.slider li .flex-caption{
+    width: 100%;
     list-style: none;
-    float:left;
-    width: 20%;
-    height:300px ;
-    box-sizing:border-box ;
-    border: 2px solid black;
-    background:lightgrey;
-    margin: 40px 20px 0px 40px;
 }
+#flex-caption p{
+position:absolute;
+top:50%;
+left:60px;
+font-size: 70px;
+color:white;
+}
+#article{
+    width: 100%;
+    background: #000;
+    top:300px;
+    background-image: url(../image/market1.jpg);
+    background-size: 100%;
+}
+#article p{
+position: relative;
+text-align: center;
+font-size: 30px;
+color:whitesmoke;
+}
+
+
+@keyframes cambio{
+    0% {margin-left:0;}
+    20%{ margin-left: 0;}
+
+    20%{margin-left:-100%; }
+    45%{margin-left:-100%; }
+
+    50%{margin-left:-200%; }
+    70%{margin-left:-200%; }
+
+    75%{margin-left:-300%; }
+    100%{margin-left:-300%; }
+
+    
+}
+#article{
+   
+}
+
 .contenedor ul li .title{
     width: 100%;
     height: 50px;
@@ -417,7 +437,6 @@ opacity: 0.8;
  .social ul li .icon-twitter {background:#00abf0;}
  .social ul li .icon-email {background:#666666 ;}
 
- 
  
 
 
