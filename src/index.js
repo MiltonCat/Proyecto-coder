@@ -1,4 +1,5 @@
 const express = require ('express');
+const morgan = require ('morgan');
 const app = express();
 const path = require('path');
 
@@ -9,8 +10,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
+//Setting
 
 //Middelwares
+app.use(morgan('combined'));
+
 
 
 //Routes
