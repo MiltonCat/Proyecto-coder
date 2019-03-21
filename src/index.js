@@ -4,6 +4,9 @@ const app = express();
 const path = require('path');
 
 
+
+
+
 //Ajustes
 app.set('port', 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -13,12 +16,12 @@ app.set('view engine', 'ejs');
 //Setting
 
 //Middelwares
-app.use(morgan('combined'));
-
-
+app.use(morgan('dev'));
+app.use(express.json());
 
 //Routes
 app.use(require('./routes/index'));
+
 
 //Static Files
 app.use(express.static(path.join(__dirname, 'public')));

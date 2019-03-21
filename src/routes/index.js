@@ -16,13 +16,18 @@ router.get('/ventas', (req, res) => {
         
 });
 
-router.get('/market', (req, res) => {
-    res.render('market.html', {title: 'Patagonia Market'});
+router.get('/Terminos', (req, res) => {
+    res.render('Terminos.html', {title: 'Patagonia Market'});
        
 });
 
 router.get('/invierte', (req, res) => {
     res.render('invierte.html', {title: 'Patagonia Market'});
+       
+});
+
+router.get('/product', (req, res) => {
+    res.render('product.html', {title: 'Patagonia Market'});
        
 });
 
