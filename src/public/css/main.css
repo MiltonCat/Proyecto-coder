@@ -116,8 +116,6 @@ header1 nav a {
     width: 100%;
     height: 500px;
     padding-top: 70px;
-
-
 }
 
 #about h3 {
@@ -890,6 +888,91 @@ footer{
 }
 .contenido-p h4 {
     
+}
+
+.container-product{
+    width: 100%;
+    display:flex;
+}
+#product1{
+    width: 100%;
+    position: relative;
+}
+#product-t{
+position: absolute; 
+text-align: center;
+}
+#product-t h1{
+    font-size: 35px;
+}
+#product-t p{
+ margin-top: 30px;   
+background-color: red; 
+font-size: 1rem;
+margin-left: 90px;
+margin-right: 90px;
+line-height: 25px;
+color:white;
+
+}
+#product-t h4{
+    font-size: 15px;
+    text-align: center;
+    padding-top:30px;
+}
+.precio-product{
+    margin-top: 20px;
+    width: 25%;
+    height: 50px;
+    border-radius: 7px ;
+    background: rgb(218, 64, 17);
+    color:white;
+    cursor:pointer;
+}
+.row-product{
+    position: relative;
+    font-size: 30px;
+    display: inline; 
+}
+.row-product a{
+    transition: all 300ms;
+    cursor: pointer;
+    border-radius:7px;
+}
+.comprar{
+    margin-top: 20px;
+    width: 30%;
+    height: 50px;
+    border-radius: 7px ;
+    background: rgb(218, 64, 17);
+    cursor:pointer;
+}
+.comprar a{
+    color:white;
+}
+.container-product1{
+    width: 100%;
+    display: flex;
+    background: rgb(158, 155, 155);
+}
+#debes-saber h4{
+    margin-top: 20px;
+    font-size:20px;
+    color:orangered;
+}
+#debes-saber p{
+    margin-top: 20px;
+    text-align: justify;
+}
+.linea-effect{
+    display: inline-block;
+    position:relative;
+}
+.h1::top,h1::bottom{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
 }
 
 
