@@ -9,24 +9,29 @@
     <%=title%>
   </title>
   <% include partials/head.html %>
+  <style>
+      body {
+              font-family: 'Ubuntu', sans-serif;
+      }
+</style>
  
 </head>
 <!--Header con navegacion-->
-<header class="row">
-  <div class="container-ventas">
-    <div class="capa-transparente">
-        <%include partials/navigation.html%>
-      <div class="container-detalles">
-        <div class="detalles">
-          <h1>Hace crecer tus negocios al ritmo de tus sueños.</h1>
+<div class="row">
+        <div class="container-ventas">
+                <% include partials/navigation.html %>
+                <div class="col-sm-8" id="parf-venta">
+                </div>
+                <div class="col-sm-4" id="parf1-venta">
+                        <h1>Ventas</h1>
+                        <h2>En Patagonia Market, vas a encontrar una variedad,
+                                de productos para invertir
+                        </h2>
+                </div>
         </div>
-      </div>
-    </div>
-  </div>
-</header>
 <body>
 <!--Texto indica como vender-->
-  <div class="text">
+  <div class="col-md-12" id="text-venta">
     <h1>¿Como comienzo a vender mis productos y servicios?</h1>
   </div>
   
@@ -54,21 +59,12 @@
                 </div>
               </div>
               </div>
-  <!--Banner -->
-<div class="container" id="banner">
-</div>
-<!--¿Porque elegirnos?-->
-<div class="container">
-  <div id="copy">
-    <div class="col-lg-12">
-      <h2>¿Por que elegirnos?</h2>
-      <p>Somos una empresa joven pero con experiencia,
-        contamos con giras comerciales en distintos paises.
-        Queremos que seas parte de este camino, y juntos cumplir nuestros sueños.</p>
-    </div>
-  </div>
-</div>
+             
 
+<!--¿Porque elegirnos?-->
+
+
+</header>
 </body>
 <%include partials/footer.html%>
 </html>

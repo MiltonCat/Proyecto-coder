@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 div img {
     position: relative;
     width: 100%;
@@ -55,15 +56,15 @@ header1 nav a {
 }
 
 #titulo {
-    width: 100%;
+    position: relative;
+    width: 90%;
     height: 550px;
     top: 50px;
     background-color: rgb(14, 35, 48);
     opacity: 0.8;
-    float: left;
-
-
-    padding-bottom: 50px;
+    padding-left: 30px;
+    margin: left;
+    padding-bottom: 40px;
 }
 
 #titulo h1 {
@@ -91,7 +92,8 @@ header1 nav a {
 }
 
 .details button {
-    padding: 10px 20px;
+    padding: 20px 30px;
+    float:center;
     font-size: 15px;
     background: none;
     border-bottom-style: none;
@@ -148,9 +150,6 @@ header1 nav a {
 
 #about {
     padding-top: 100px;
-
-    background-color: #00abf0;
-
 }
 
 #about h1 {
@@ -159,46 +158,41 @@ header1 nav a {
     padding-bottom: 40px;
     color: rgba(58, 57, 57, 0.897);
 }
-
 .container-ventas {
     width: 100%;
     height: 500px;
     background-image: url(../image/resumen1.jpg);
     background-size: 100%;
     position: relative;
-
 }
 
-#imagen {
-    width: 100%;
-
+.parf-ventas{
+    
+}
+#parf1-venta {
+    background-color:rgb(70, 235, 70);
+    width: 28%;
+    height: 550px;
+    font-size: 30px;
+    text-align: center;
+    left:50px;
+    padding-top: 350px;
+    opacity:0.9;
 }
 
-.capa-transparente {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    background-color: rgb(22, 39, 61);
-    opacity: 0.5;
-
-}
-
-.detalles h1 {
-    color: lightgreen;
+#parf1-venta h1{
     position: relative;
+    bottom: 210px;
     font-size: 50px;
-    text-align: center;
-    padding-top: 70px;
-
+    color:#fff;
 }
-
-.detalles h3 {
-    color: lightgreen;
+#parf1-venta h2{
     position: relative;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 200px;
-
+    bottom:40px;
+    padding-bottom: 30px;
+    font-size: 23px;
+    bottom: 200px;
+    color:#fff;
 }
 
 #invitacion {
@@ -207,11 +201,12 @@ header1 nav a {
     height: 200px;
 }
 
-.text h1 {
+#text-venta  {
     width: 100%;
     height: 20px;
+    top: 130px;
     font-size: 40px;
-    text-align: center;
+   text-align: center;
     padding-top: 20px;
     color: rgb(73, 70, 70);
     font-family: 'Courgette', cursive;
@@ -326,24 +321,29 @@ header1 nav a {
 #banner {
     text-align: center;
     width: 100%;
-    height: 350px;
+    height: 250px;
+    bottom:300px;
     background-image: url(../image/negocio4.jpg);
     background-size: 100%;
     position: relative;
 
 }
-
-#copy h2 {
-    text-align: center;
-    color: rgb(73, 67, 67);
-    padding-top: 70px;
-    font-size: 50px;
+.row-porque{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
 }
+.copy{
+   
 
-#copy p {
-    color: rgb(43, 35, 35);
-    font-size: 30px;
-    text-align: center;
+    
+    
+}
+.copy-img{
+    position: absolute;
+    left: 50px;
+    
 }
 
 .container-market {
@@ -413,17 +413,11 @@ header1 nav a {
         margin-left: -100%;
     }
 
-
-
 }
-
 
 .container-caja {
     padding-top: 500px;
 }
-
-
-
 
 .contenedor ul li .title {
     width: 100%;
@@ -456,38 +450,153 @@ header1 nav a {
     background-size: 100%;
 }
 
-.parrafo h1 {
-    width: 80%;
-    height: 80px;
-    text-align: left;
-    padding-top: 60px;
-    color: white;
-    font-size: 60px;
-}
-
-#parrafo {}
-
 #parrafo1 {
-    background-color: rgb(70, 235, 70);
-    opacity: 0.6;
-    float: right;
-    width: 90%;
+    width: 30%;
+    float:center;
+    background-color: rgb(25, 128, 25);
+    opacity: 0.7;
+    text-align: center;
     height: 500px;
-    padding-right: 90px;
-
-
+    left:800px;
 }
 
 #parrafo1 h1 {
     color: white;
-    text-align: center;
-    padding-top: 60px;
+    font-size: 60px;
+    padding-top: 100px;
 }
 
 #parrafo1 h2 {
     color: white;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
+    font-size: 25px;
+}
+#inv{
+    width: 1300px;
+    height: 600px;
+    margin: 90px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#inv .box-inv1{
+   position: relative;
+   width: 310px;
+   height: 600px;
+   background: rgb(242, 243, 243); 
+   margin:30px;
+   box-sizing: border-box;
+   display: inline-block;
+   border-radius: 15px 15px;
+   -webkit-box-shadow:0px 0px 10px 5px #c2bdbd;
+   -moz-box-shadow:0px 0px 10px 5px #c2bdbd;
+   box-shadow:0px 0px 10px 5px #c2bdbd;
+}
+
+#inv .box-inv1 .imgBox{
+    position: relative;
+    bottom:15px;
+    right:2px;
+}
+.linea h2{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.linea::after{
+    content: "";
+    width:270px;
+    height: 3px;
+    background-color: currentColor;
+    top:1.3em;
+}
+.linea::after{
+  position: absolute;
+  right:20px;
+  
+}
+
+
+#inv .box-inv1 .imgBox img{
+    max-width: 100%;
+    height: 250px;
+    transition: .5s;
+}
+#inv .box-inv1:hover .imgBox img{
+    transform: translateY(39px);
+}
+ .details-inv .content-inv .linea
+{
+    
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color:#554e4e; 
+    font-family: 'Roboto Condesend', sans-serif !important;
+    transition: .5s;
+}
+.details-inv .content-inv .linea:hover{
+    transform: rotateY(1.1);
+    box-shadow: 0 0  8px #171816; 
+}
+
+.details-inv .content-inv  p{ 
+    position: relative;
+    color:#000;
+    font-family: 'Roboto Condesend', sans-serif !important;
+    text-align: center;
+}
+  .content-inv{
+     position: relative;
+    text-align: center;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+
+#inv .box-inv1 .details-inv a{
+    position:relative;
+    padding-left: 50px;
+}
+.btn-inv{
+    border:1px solid #3498db;  
+    background: #3498db;
+    left:30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin:auto;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.btn-inv:hover{
+    color:#fff;
+    
+}
+.btn-inv:before{
+    content: "";
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #fff;
+    transition: 0.8s;
+}
+.btn-inv::before{
+    top:0;
+    border-radius: 0 0 50% 50%;
+}
+.btn-inv:hover::before{
+height: 180%;
+
+
 }
 
 .social {
@@ -680,6 +789,7 @@ footer{
     max-width: 400px;
 }
 .column1 h1{
+    margin-top:20px;
     font-size: 22px;
 }
 .column1 p{
@@ -696,6 +806,7 @@ footer{
     padding-left: 130px;
 }
 .column2 h1{
+    margin-top:20px;
     font-size: 22px;
 }
 .column2 .row{
@@ -715,6 +826,7 @@ footer{
     display:flex;
 }
 .column3 h1{
+    margin-top: 20px;
     font-size: 22px;
 }
 .column3 .row3 img{
@@ -934,10 +1046,58 @@ color:white;
     font-size: 30px;
     display: inline; 
 }
+.btn1{
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    background: #f1f1f1;
+    margin:10px;
+    border-radius:30px;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color:#3498db;
+    overflow:hidden;
+    position: relative;
+}
+.btn1 i{
+    line-height: 80px;
+    font-size: 26px;
+    transition: 0.2s;
+}
+.btn1:hover i{
+    transform: scale(1.3);
+    color:#f1f1f1;
+}
+.btn1::before{
+    content:"";
+    position:absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top:90%;
+}
+.btn1:hover::before{
+    animation:aaa 0.7s 1;
+    top:-10%;
+    left:-10%;
+}
+@keyframes aaa{
+0%{
+left:-100%;
+top:90%;
+}50%{
+left: 10%;
+top:-30%;
+}100%{
+top:-10%;
+left:-10%;
+}
+}
 .row-product a{
     transition: all 300ms;
     cursor: pointer;
-    border-radius:7px;
+    
 }
 .comprar{
     margin-top: 20px;
@@ -964,15 +1124,77 @@ color:white;
     margin-top: 20px;
     text-align: justify;
 }
-.linea-effect{
-    display: inline-block;
-    position:relative;
+.body-contact{
+ height: 630px;
+ margin:0;
+ padding:0;
+ background-image: url(../image/fotojuan2.jpg);
+ background-size: cover;
+ font-family: 'Ubuntu', sans-serif;
 }
-.h1::top,h1::bottom{
-    content: "";
+.box-contact{
+position: absolute;
+top:20%;
+left:35%;
+transform: translate(-50% -50%);
+width: 400px;
+padding: 50px;
+background: rgba(0, 0, 0,.8);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.5);
+border-radius: 10px;
+}
+.box-contact h2{
+margin: 0 0 30px;
+padding: 0;
+color:#fff;
+text-align: center;
+}
+.box-contact .inputBox{
+    position: relative;
+}
+.box-contact .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.box-contact .inputBox label{
     position: absolute;
-    height: 3px;
-    background-color: black;
+    top:0;
+    left:0;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    pointer-events: none;
+    transition: .5s;
 }
+.box-contact .inputBox input:focus ~ label,
+.box-contact .inputBox input:valid ~ label
+{
+    top:-20px;
+    left:0;
+    color:#03a9f4;
+    font-size:12px;
+}
+.box-contact input[type="submit"]
+{
+    background: transparent;
+    border:none;
+    outline: none;
+    color:#fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+
 
 
