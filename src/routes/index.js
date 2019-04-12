@@ -76,4 +76,33 @@ router.get('/product8', (req, res) => {
        
 });
 
+router.get('/exporta.html', (req, res) => {
+    res.render('exporta.html', {title: 'Patagonia Market'});
+       
+});
+router.get('/exporta1.html', (req, res) => {
+    res.render('exporta1.html', {title: 'Patagonia Market'});
+       
+});
+
+router.get('/exporta2.html', (req, res) => {
+    res.render('exporta2.html', {title: 'Patagonia Market'});
+       
+});
+router.get('/exporta3.html', (req, res) => {
+    res.render('exporta3.html', {title: 'Patagonia Market'});
+       
+});
+router.get('/exporta4.html', (req, res) => {
+    res.render('exporta4.html', {title: 'Patagonia Market'});
+       
+});
+router.get('/exporta5.html', (req, res) => {
+    res.render('exporta5.html', {title: 'Patagonia Market'});
+       
+});
+router.get('/exporta6.html', (req, res) => {
+    res.render('exporta6.html', {title: 'Patagonia Market'});
+       
+});
 module.exports = router;
