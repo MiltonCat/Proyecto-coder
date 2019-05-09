@@ -421,12 +421,7 @@ header1 nav a {
     display: flex;
     position: relative;
 }
-.copy{
-   
 
-    
-    
-}
 .copy-img{
     position: absolute;
     left: 50px;
@@ -1106,14 +1101,28 @@ footer{
     grid-template-columns: repeat(3, 1fr );
     grid-template-rows: repeat(3, auto);
 }
-.contenido-p h4 {
-    
-}
+
 
 .container-product{
     width: 100%;
     display:flex;
+    position:relative;
+    text-align: center;
 }
+
+
+
+@media screen and(max-width: 700px){
+    h1{
+        font-size: 40px;
+    }
+}
+[id^="sli"]:checked + .sli{
+    left:0;
+    transition: left 600ms ease;
+}
+
+
 #product1{
     width: 100%;
     position: relative;

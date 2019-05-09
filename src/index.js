@@ -19,6 +19,7 @@ app.set('view engine', 'ejs');
 app.use(morgan('dev'));
 app.use(express.json());
 
+
 //Routes
 app.use(require('./routes/index'));
 
