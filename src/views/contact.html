@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,39 @@
     <title>Market Patagonia</title>
     <% include partials/head.html%>
 </head>
-<body>
-    <%include partials/navigation.html%>
+
+<body class="arriba">
+    <div id="tab" class="tab">
+        <div class="contenedor-tab">
+            <div class="img">
+                <img src="" alt="">
+            </div>
+            <div class="enl" id="enl">
+                <a href="/" id="enlaces-inicio" class="btn-header">Inicio</a>
+                <a href="/invierte" id="enlaces-invierte" class="btn-header">Quienes Somos</a>
+                <a href="/ventas" id="enlaces-ventas" class="btn-header">Ventas</a>
+                <a href="/Terminos" id="enlaces-reglas" class="btn-header">Reglas Claras</a>
+                <a href="/contact" id="enlaces-suscribete" class="btn-header">Suscribete</a>
+            </div>
+
+        </div>
+    </div>
     <div class="body-contact">
         <div class="box-contact">
             <h2>Recibe las mejores ofertas!!</h2>
             <form>
-               <div class="inputBox">
-                   <input type="text" name="" required="">
-                   <label>Usuario</label>
-               </div> 
-               <div class="inputBox">
-                <input type="password" name="" required="">
-                <label>Contraseña</label>
-            </div>
-            <input type="submit" name="" value="submit">
+                <div class="inputBox">
+                    <input type="text" name="" required="">
+                    <label>Usuario</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="" required="">
+                    <label>Contraseña</label>
+                </div>
+                <input type="submit" name="" value="submit">
             </form>
         </div>
-    </ div class>
+        </ div class>
 </body>
+
 </html>
