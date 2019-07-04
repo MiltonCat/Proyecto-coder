@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src"
+    "dev": "nodemon src",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +23,11 @@
     "morgan": "^1.9.1",
     "postcss-loader": "^3.0.0",
     "pug": "^2.0.3",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
-  }
+  },
+  "snyk": true
 }
