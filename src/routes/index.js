@@ -1,23 +1,43 @@
 const express = require('express');
 const router = express.Router();
 
+
 router.get('/', (req, res) => {
     res.render('index.html', {title: 'Patagonia al Mundo'});
 
 });
 
-router.get('/ventas', (req, res) => {
-    res.render('ventas.html', {title: 'Patagonia al Mundo'});
+router.get('/negocios', (req, res) => {
+    res.render('negocios.html', {title: 'Patagonia al Mundo'});
        
 });
 
-    router.get('/contact', (req, res) => {
-     res.render('contact.html', {title: 'Patagonia al mundo'});
+    router.get('/sabores', (req, res) => {
+     res.render('sabores.html', {title: 'Patagonia al mundo'});
         
 });
 
-router.get('/Terminos', (req, res) => {
-    res.render('Terminos.html', {title: 'Patagonia al mundo'});
+router.get('/increibles', (req, res) => {
+    res.render('increibles.html', {title: 'Patagonia al mundo'});
+       
+});
+router.get('/lugares', (req, res) => {
+    res.render('lugares.html', {title: 'Patagonia al mundo'});
+       
+});
+
+router.get('/condiciones', (req, res) => {
+    res.render('condiciones.html', {title: 'Patagonia al mundo'});
+       
+});
+
+router.get('/destinos', (req, res) => {
+    res.render('destinos.html', {title: 'Patagonia al mundo'});
+       
+});
+
+router.get('/patagonia-market', (req, res) => {
+    res.render('patagonia-market.html', {title: 'Patagonia al mundo'});
        
 });
 
@@ -76,16 +96,7 @@ router.get('/product8', (req, res) => {
        
 });
 
-router.get('/condiciones.pug', (req, res) => {
-    res.render('condiciones.pug', {title: 'Patagonia al mundo'});
-       
-});
 
-
-router.get('/about.pug', (req, res) => {
-    res.render('about.pug', {title: 'Patagonia al mundo'});
-       
-});
 
 
 module.exports = router;

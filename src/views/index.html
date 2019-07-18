@@ -5,189 +5,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="google-site-verification" content="0RueSsL8CjKf4jYz7sd0aWJdEM5Z3VuRZ4whi1Qksj8" />
+        <?xml version="1.0" encoding="UTF-8"?>
         <title><%=title%></title>
         <% include partials/head.html %>
+
 </head>
 <!--Header-->
 
-<body class="hidden">
-        <header>
-                
-                <nav id="nav" class="nav">
-                        <div class="contenedor-nav">
-                                <div class="logo">
-                                        <img src="" alt="">
-                                </div>
-                                <div class="enlaces" id="enlaces">
-                                        <a href="/" id="enlaces-inicio" class="btn-header">Inicio</a>
-                                        <a href="/invierte" id="enlaces-invierte" class="btn-header">Quienes Somos</a>
-                                        <a href="/ventas" id="enlaces-ventas" class="btn-header">Ventas</a>
-                                        <a href="/Terminos" id="enlaces-reglas" class="btn-header">Reglas Claras</a>
-                                        <a href="/contact" id="enlaces-suscribete" class="btn-header">Suscribete</a>
-                                </div>
-                                <div class="icono" id="open">
-                                        <span>&#9776;</span>
-                                </div>
-                        </div>
-                </nav>
-                <div class="textos1">
-                        <h1>Market Patagonia</h1>
-                        <h3>La patagonia mas cerca tuyo</h3>
+<header>
+        <% include partials/navbar.html%>
+        <div class="textos1">
+                <h1>Market Patagonia</h1>
+                <h3>La patagonia mas cerca tuyo</h3>
+                <a href="/condiciones">
+                        <h4>Terminos y condiciones</h4>>
+                </a>
+        </div>
+
+
+</header>
+
+<div class="mkt">
+        <p class="descubre">
+                Descubre Market Patagonia
+        </p>
+</div>
+<div id="contenedor">
+        <div class="elemento1">
+                <div class="col-sm-3" id="desc">
+                <img src="image/patagonia1.jpg"><a href="/increibles">
                 </div>
-        </header>
-        <!--nuestros servicios-->
-        <main>
-                <div class="work contenedor" id="trabajo">
-                        <h4>La Patagonia Mas Cerca tuyo</h4>
-                        <p class="after"></p>
-                        <div class="botones-work">
-                                <ul>
-                                <li><a href="/" id="enlaces-inicio" class="btn-header">Inicio</a></li>  
-                                <li><a href="/invierte" id="enlaces-invierte" class="btn-header">Quienes Somos</a></li>              
-                                <li><a href="/ventas" id="enlaces-ventas" class="btn-header">Ventas</a></li>                                     
-                                <li><a href="/Terminos" id="enlaces-reglas" class="btn-header">Reglas Claras</a></li>               
-                                 <li><a href="/contact" id="enlaces-suscribete" class="btn-header">Suscribete</a></li>               
-                                </ul>
+                <div class="container-mil">
+                <div class="col-sm-3" id="textos2">
+                <h1>Patagonia Increibles</h1>
+                </div>
+                </div>
+               </div>
+                <div class="elemento2">
+                <div class="col-sm-3" id="desc">
+                <img src="image/paisaje.jpg"><a href="/lugares">
+                </div>
+                <div class="container-mil">
+                <div class="col-sm-3" id="textos2">
+                <h1>Lugares magicos</h1>
+                </div>
+                </div>
+        </div>
+        <div class="elemento3">
+                <div class="col-sm-3" id="desc">
+                        <img src="image/salmon1.jpg"><a href="/sabores">
+                </div>
+                <div class="container-mil">
+                        <div class="col-md-3" id="textos2">
+                                <h1>Imperdibles sabores</h1>
                         </div>
-                        <!--Portafolio-->
-                        <div class="galeria-work">
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/casa.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                 a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.
-                                                </p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product">¡Quiero Invertir Acá!</a>
-                                                <hr>  
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
+                </div>
+        </div>
+        </a>
+</div>
 
-                                        <div class="img-work">
-                                                <img src="image/sofa.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                        a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                  <hr>
-                                                <a href="/product1">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="box-one">
-                                                <div class="img-work">
-                                                        <img src="image/foto5.jpeg" alt="">
-                                                </div>
-                                                <div class="textos-work">
-                                                        <h4>Publica aqui</h4>
-                                                       <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                        a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
 
-                                                        <p>Precio:$300</p>
-                                                        <hr>
-                                                        <a href="/product2">¡Quiero Invertir Acá!</a>
-                                                        <hr>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/proyecto.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                        a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product3">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/ventas.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product4">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/terminos.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product5">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/imagen2.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                 a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product6">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/create.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                 a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product7">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                                <div class="cont-work programacion">
-                                        <div class="img-work">
-                                                <img src="image/create1.jpg" alt="">
-                                        </div>
-                                        <div class="textos-work">
-                                                <h4>Publica aqui</h4>
-                                                <p>En este espacio podras publicar tus productos, y servicios para llevarlos
-                                                 a diferentes mercados,en Latinoamerica y el mundo. Lleva tu negocio mas lejos.</p>
-                                                <p>Precio:$300</p>
-                                                <hr>
-                                                <a href="/product8">¡Quiero Invertir Acá!</a>
-                                                <hr>
-                                        </div>
-                                </div>
-                        </div>
-                     <script src="../js/jquery.js"></script>
-                     <script src="../js/main.js"></script>
-                    
+<div class="reservas">
+        <h1>Los mas reservados</h1>
+</div>
+<!--nuestros servicios-->
+<%include partials/portafolio.html%>
 </body>
 
 </html>
-
