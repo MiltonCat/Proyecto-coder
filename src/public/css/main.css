@@ -21,9 +21,11 @@ body {
     background: var(--fondo);
 }
 
-img {
-    vertical-align: top;
-}
+
+textarea{
+    resize: none;
+    height: 6rem;
+  }
 
 /*header*/
 header {
@@ -33,11 +35,6 @@ header {
     background-size: cover;
     height: 500px;
     opacity: .9;
-    width: 100%;
-}
-
-nav {
-    position: relative;
     width: 100%;
 }
 
@@ -56,6 +53,9 @@ nav {
     align-items: center;
     min-height: 90vh;
     font-family: 'Poppins'sans-serif;
+}
+.quienes-somos img{
+    width: 50px;
 }
 
 /*patagonia increible*/
@@ -141,11 +141,9 @@ nav {
 
 }
 
-.content1 img {
-    width: 685px;
-    height: 335px;
-    padding-right: 40px;
-    padding-bottom: 3px;
+.content1 img  {
+   width: 100%;
+   position: cover;
 
 
 }
@@ -161,8 +159,8 @@ nav {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
 
 
 }
@@ -192,13 +190,13 @@ nav {
     position: relative;
     top: 60px;
     font-family: 'Merienda', cursive;
-    font-size: 25px;
+    font-size: 23px;
     color: rgb(61, 7, 61);
 }
 
 .imgBx h5 {
     position: relative;
-    top: 90px;
+    top: 80px;
 }
 
 
@@ -274,6 +272,10 @@ nav {
         margin-left: 0;
     }
 }
+.details1 .content1 img {
+    width: 100%;
+}
+
 
 
 .innovacion {
@@ -391,6 +393,9 @@ nav .enlaces a {
     text-decoration: none;
     color: black;
 }
+.logo img{
+    width:100%;
+}
 
 .navbar {
     background: none;
@@ -493,96 +498,38 @@ nav .enlaces a {
 
 }
 
-#contenedor {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -ms-flex-line-pack: left;
-    justify-content: space-between;
-}
 
-
-.elemento1 {
-    width: 350px;
-    height: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+#container{
+    width: 100%;
     display: flex;
-    position: relative;
-    text-align: left;
-    padding-top: 30px;
+    justify-content: center;
+    flex-wrap:wrap;
 
 }
-
-.elemento2 {
-    width: 350px;
-    height: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    text-align: left;
-    padding-top: 30px;
+article{
+    margin-left:50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
 }
-
-.elemento3 {
-    width: 350px;
-    height: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    text-align: left;
-    padding-top: 30px;
-}
-
-#desc img {
-    width: 200%;
-    height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    text-align: left;
-    padding-top: 0px;
-
-}
-
-#textos2 {
-    position: relative;
-    text-align: left;
-
-}
-
-#textos2 h1 {
+article h4{
     font-size: 15px;
-    color: rgb(83, 80, 80);
-    border-style: solid;
-    text-align: center;
-    padding-top: 8px;
-    padding-right: 2px;
-    border-color: rgb(231, 222, 222);
-    border-width: 1px 1px 1px 0px;
-    margin: 0px 0px 0px -7px;
-    height: 71px;
-    width: 220px;
+    margin-top: 10px;
+    margin: right;
+    color:rgb(197, 191, 191);
+}
+article span h4{
     position: relative;
+    text-align: left;
+    margin: -50px 0px 0px 127px;
 }
 
-#textos2 p {
-    font-size: 12px;
-    color: rgb(138, 132, 132);
-    border-style: solid;
-    text-align: center;
-    padding-top: 3px;
-    padding-right: 19px;
-    border-color: rgb(231, 222, 222);
-    border-width: 1px 1px 1px 0px;
-    margin: 0px 0px 0px -7px;
-    height: 71px;
-    width: 210px;
-    position: relative;
+img{
+    width: 30%;
+    max-width: 380px;
 }
+
+
 
 .galeria-work {
     max-width: 1200px;
@@ -1398,7 +1345,7 @@ nav .enlaces a {
 
 footer {
     width: 100%;
-    background: #202020;
+    background:rgb(26, 22, 22);
     color: white;
 }
 
@@ -1500,8 +1447,7 @@ footer {
 
 .container-footer {
     width: 100%;
-    background: #101010;
-
+    background: #312f2f;
     padding: 20px;
 }
 
@@ -1677,16 +1623,34 @@ footer {
 
 }
 
-.content-export {
-    position: relative;
-    top: 0;
-    left: 0;
+
+.vender{
     width: 100%;
-    height: 60vh;
-    background: #ccc;
-    margin: 0;
-    padding: 0;
+    max-width: 1260px;
+    display:flex;
+    display: inline-block;
 }
+#container-producto{
+position: relative;
+
+   
+    
+}
+#container-producto p{
+    margin-top: 30px;
+    background-color: red;
+    font-size: 1rem;
+    margin-left: 90px;
+    margin-right: 90px;
+    line-height: 25px;
+    color: white;
+}
+#container-producto h4{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 30px;
+}
+
 
 #terminos {
     max-width: 1200px;
@@ -1805,20 +1769,15 @@ footer {
 }
 
 
-#product1 img {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+ #product1 img {
+  width: 100%;
 }
 
-#product-t {
-    position: absolute;
+#container-producto h1 {
+    font-size: 35px;
     text-align: center;
 }
 
-#product-t h1 {
-    font-size: 35px;
-}
 
 #product-t p {
     margin-top: 30px;
@@ -1838,7 +1797,7 @@ footer {
 }
 
 .precio-product {
-    margin-top: 20px;
+    margin-top: 0px;
     width: 35%;
     height: 50px;
     border-radius: 7px;
@@ -1955,15 +1914,16 @@ footer {
 
 .container-product1 {
     width: 100%;
+    padding-top: 130px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: rgb(158, 155, 155);
+    background: rgb(218, 211, 211);
 
 }
 
 #debes-saber h4 {
-    margin-top: 20px;
+    margin-top: 70px;
     font-size: 20px;
     color: orangered;
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +7,50 @@
         <?xml version="1.0" encoding="UTF-8"?>
         <title><%=title%></title>
         <% include partials/head.html %>
-
 </head>
 <!--Header-->
-
 <header>
         <% include partials/navbar.html%>
         <div class="textos1">
                 <h1>Market Patagonia</h1>
                 <h3>La patagonia mas cerca tuyo</h3>
-                <a href="/condiciones">
-                        <h4>Terminos y condiciones</h4>>
-                </a>
         </div>
-
-
 </header>
-
 <div class="mkt">
         <p class="descubre">
                 Descubre Market Patagonia
         </p>
 </div>
-<div id="contenedor">
-        <div class="elemento1">
-                <div class="col-sm-3" id="desc">
-                <img src="image/patagonia1.jpg"><a href="/increibles">
-                </div>
-                <div class="container-mil">
-                <div class="col-sm-3" id="textos2">
-                <h1>Patagonia Increibles</h1>
-                </div>
-                </div>
-               </div>
-                <div class="elemento2">
-                <div class="col-sm-3" id="desc">
+<div id="container">
+        <article>
+                <img src="image/patagonia1.jpg">
+                <a href="/increibles">
+                        <span>
+                                <h4>Patagonia Increible</h4>
+                        </span>
+                </a>
+        </article>
+        <article>
                 <img src="image/paisaje.jpg"><a href="/lugares">
-                </div>
-                <div class="container-mil">
-                <div class="col-sm-3" id="textos2">
-                <h1>Lugares magicos</h1>
-                </div>
-                </div>
-        </div>
-        <div class="elemento3">
-                <div class="col-sm-3" id="desc">
-                        <img src="image/salmon1.jpg"><a href="/sabores">
-                </div>
-                <div class="container-mil">
-                        <div class="col-md-3" id="textos2">
-                                <h1>Imperdibles sabores</h1>
-                        </div>
-                </div>
-        </div>
-        </a>
+                        <span>
+                                <h4>Lugares magicos</h4>
+                        </span>
+                </a>
+        </article>
+        <article>
+                <img src="image/salmon1.jpg"><a href="/sabores">
+                        <span>
+                                <h4>imperdibles sabores</h4>
+                        </span>
+                </a>
+        </article>
 </div>
-
-
+</article>
+</div>
 <div class="reservas">
         <h1>Los mas reservados</h1>
 </div>
 <!--nuestros servicios-->
 <%include partials/portafolio.html%>
 </body>
-
 </html>
