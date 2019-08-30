@@ -3,28 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><% title %></title>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title><%=title%></title>
+
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-            <a class="navbar-brand" href="/"><span class="logo">
-                    <img src="../image/logop4.png"></a>
-            </span>
-        <div class="navbar">
-            
-            <div class="contenedor-nav">
-                <ul class="enlaces ml auto">
-                    <a href="/" id="enlaces-inicio" class="btn-header">Inicio</a>
-                    <a href="/negocios" id="enlaces-invierte" class="btn-header">¿Tienes un Negocio?
-                    </a>
-                    <a href="/patagonia-market" id="enlaces-reglas" class="btn-header">Patagonia Market</a>
-                </ul>
+<!--Header-->
+<header1>
+    <nav class="menu">
+        <div class="container-menu">
+            <div class="logo">
+                <div class="logo-name">
+                    <img src="../image/logop4.png" alt="">
+                    <a href="#">Market Patagonia</a>
+                </div>
+                <div class="icon-menu">
+                    <a href="#" id="btn-menu" class="btn-menu"><span class="fa fa-bars"></span></a>
+                </div>
             </div>
         </div>
-      </div>
+        <div class="menu-link">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/negocios">¿Tienes un negocio?</a></li>
+                <li><a href="/patagonia-market">Patagonia Market</a></li>
+            </ul>
+        </div>
     </nav>
+</header1>
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/menu.js"></script>
+
 </body>
+
+
 </html>

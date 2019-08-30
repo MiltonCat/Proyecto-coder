@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport"
+                content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <?xml version="1.0" encoding="UTF-8"?>
         <title><%=title%></title>
-        <% include partials/head.html %>
+        <%include partials/head.html%>
 </head>
+
 <!--Header-->
-<header>
-        <% include partials/navbar.html%>
-        <div class="textos1">
-                <h1>Market Patagonia</h1>
-                <h3>La patagonia mas cerca tuyo</h3>
+<div class="navegador">
+        <%include partials/navbar.html%>
+</div>
+<div class="index">
+
+        <header>
+
+                <div class="textos1">
+                        <h1></h1>
+                        <h3></h3>
+                </div>
+        </header>
+
+        <div class="mkt">
+                <div class="descubre">Gana dinero con nosotros, enterate como
+                <div class="descubre1"><h4>Descubre como aumentar tus ingresos </h4></div>
         </div>
-</header>
-<div class="mkt">
-        <p class="descubre">
-                Descubre Market Patagonia
-        </p>
+        </div>
+
+        <div id="reservas">
+                <img src="image/ventas4.jpg" alt="">           
+        </div>
+        <!--nuestros servicios-->
+        <%include partials/portafolio.html%>
+        </body>
 </div>
-<div id="container">
-        <article>
-                <img src="image/patagonia1.jpg">
-                <a href="/increibles">
-                        <span>
-                                <h4>Patagonia Increible</h4>
-                        </span>
-                </a>
-        </article>
-        <article>
-                <img src="image/paisaje.jpg"><a href="/lugares">
-                        <span>
-                                <h4>Lugares magicos</h4>
-                        </span>
-                </a>
-        </article>
-        <article>
-                <img src="image/salmon1.jpg"><a href="/sabores">
-                        <span>
-                                <h4>imperdibles sabores</h4>
-                        </span>
-                </a>
-        </article>
-</div>
-</article>
-</div>
-<div class="reservas">
-        <h1>Los mas reservados</h1>
-</div>
-<!--nuestros servicios-->
-<%include partials/portafolio.html%>
-</body>
+
 </html>

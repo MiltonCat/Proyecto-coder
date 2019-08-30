@@ -1,15 +1,12 @@
 require('dotenv').config();
-const express = require ('express');
-const morgan = require ('morgan');
+import express, { json } from 'express';
+import morgan  from 'morgan';
 const cors = require('cors');
 const app = express();
 const path = require('path');
 const productsApiRouter = require('./routes/api/products');
 
 const index= require('./index.js');
-require('./databases');
-
-
 app.use("/api/products", productsApiRouter);
 
 //Ajustes
@@ -19,19 +16,19 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs', 'pug');
 
 
-
-
-
 //Middelwares
 app.use(cors());
 app.use(morgan('dev'));
+app.use(json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+
 
 
 //Routes
 app.use(require('./routes/index'));
 app.use("/api/products", productsApiRouter);
+
 
 
 
@@ -45,4 +42,11 @@ app.use(express.static(path.join(__dirname, 'public')));
     console.log(`server on port ${app.get('port')}`);
   });
 }
+
+//404 Not Found
+app.use((req, res, next)=> {
+  res.status(404).send('404 Not Found');
+})
+
+
 main();
