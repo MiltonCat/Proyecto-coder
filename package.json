@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src --out-dir dist",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -28,7 +30,8 @@
     "pg-hstore": "^2.3.3",
     "pug": "^2.0.3",
     "rimraf": "^2.6.3",
-    "sequelize": "^5.17.2"
+    "sequelize": "^5.17.2",
+    "snyk": "^1.222.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -36,5 +39,6 @@
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "nodemon": "^1.18.10"
-  }
+  },
+  "snyk": true
 }
