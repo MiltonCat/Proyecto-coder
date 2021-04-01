@@ -24,14 +24,14 @@
     "file-loader": "^3.0.1",
     "git": "^0.1.5",
     "mini-css-extract-plugin": "^0.5.0",
-    "mongoose": "^5.6.4",
+    "mongoose": "^5.12.3",
     "morgan": "^1.9.1",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
     "pug": "^2.0.3",
     "rimraf": "^2.6.3",
     "sequelize": "^5.17.2",
-    "snyk": "^1.222.1"
+    "snyk": "^1.230.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
