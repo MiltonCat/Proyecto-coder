@@ -30,7 +30,7 @@
     "pg-hstore": "^2.3.3",
     "pug": "^2.0.3",
     "rimraf": "^2.6.3",
-    "sequelize": "^5.17.2",
+    "sequelize": "^6.6.5",
     "snyk": "^1.222.1"
   },
   "devDependencies": {
